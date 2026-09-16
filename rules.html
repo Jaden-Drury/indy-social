@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Indy Social | Server Rules</title>
+  <meta
+    name="description"
+    content="Official Indy Social Discord server rules for our Indianapolis-based adult community."
+  />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Outfit:wght@500;600;700;800&display=swap"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="styles/site.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-row">
+      <a class="brand" href="index.html" aria-label="Indy Social Home">
+        <span class="brand-mark" aria-hidden="true">
+          <img src="assets/IndySocialIcon_Colored.svg" alt="Indy Social logo icon" />
+        </span>
+        <span>INDY SOCIAL</span>
+      </a>
+
+      <div class="header-actions">
+        <a class="ghost-btn" href="index.html">Back to Home</a>
+        <a class="discord-btn" href="https://discord.gg/YEjSyDCSVV" target="_blank" rel="noopener noreferrer">Join the Discord</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section>
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="pill">Indy Social Discord</span>
+          <h1>Server Rules</h1>
+          <p>
+            Indy Social is an 18+ Indianapolis community focused on respectful social connection.
+            These rules help keep the server welcoming, safe, and organized.
+          </p>
+        </div>
+
+        <article class="card reveal">
+          <ol class="rules-list">
+            <li>Everything in its own channel, everything else in <strong>⭐-general</strong>.</li>
+            <li>Respect every member.</li>
+            <li><strong>Do not send unwanted private messages or friend requests.</strong> If you are receiving unwanted PMs or friend requests from a member of this server, contact a <strong>@Mod</strong>.</li>
+            <li>This is <strong>NOT</strong> a place to find a date or hookup.</li>
+            <li>No inciting or baiting messages in order to start an argument.</li>
+            <li>Respect pronouns.</li>
+            <li>Everything NSFW goes to <strong>nsfw</strong> (ping a <strong>@Mod</strong> if you are 18+; <strong>nsfw</strong> is not a porn channel).</li>
+            <li>Nothing NSFW in public channels.</li>
+            <li>Any photos posted may be deleted at the request of anyone in the photo.</li>
+            <li>No selling of any commercial product or service (see <strong>classifieds</strong>).</li>
+            <li>No solicitation or promotions.</li>
+            <li>No selling or rehoming of any pets or living creatures.</li>
+            <li>No advertising of other Discord servers, subreddits, or groups.</li>
+            <li>Any channels in the Serious Discussions category must be treated as such.</li>
+            <li>We are an 18+ community.</li>
+          </ol>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container footer-row">
+      <p>Indy Social • Indianapolis, Indiana • Established 2019</p>
+      <div class="footer-links">
+        <a href="index.html">Home</a>
+        <a href="https://discord.gg/YEjSyDCSVV" target="_blank" rel="noopener noreferrer">Join our Discord</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    const revealItems = document.querySelectorAll(".reveal");
+
+    const observer = new IntersectionObserver(
+      (entries) => {
+        for (const entry of entries) {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("visible");
+            observer.unobserve(entry.target);
+          }
+        }
+      },
+      { threshold: 0.16 }
+    );
+
+    revealItems.forEach((item) => observer.observe(item));
+  </script>
+</body>
+</html>
