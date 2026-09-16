@@ -1,39 +1,179 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Indy Social</title>
-<link rel="stylesheet" href="index.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Indy Social | Meet New People in Indianapolis</title>
+  <meta
+    name="description"
+    content="Indy Social helps adults in Indianapolis meet new people and find friends for events and shared experiences. Join our Discord community today."
+  />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Outfit:wght@500;600;700;800&display=swap"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="styles/site.css" />
 </head>
 <body>
-    <header>
-        <div class="header-container"> 
-            <img class="header-border" src="./assets/header.svg"/>        
-            <img class="logo" src="./assets/IndySocial_Logo_Monotone.svg" alt="Indy Social Logo"  />
-            <h1 class="header-title">Building Community, One Event at a Time</h1>
-            <img class="header-hero-image" src="./assets/indy-city-circle.jpg"/>
-        </div>
-    </header>
-    <h2>About Indy Social</h2>
-    <p>Indy Social is an Indianapolis-based organization dedicated to fostering community connections through hosting meetups at various locations around the city. Our goal is to create opportunities for people to meet, socialize, and build meaningful relationships in a welcoming and inclusive environment. By organizing gatherings at diverse venues across the Indianapolis area, Indy Social encourages residents to explore local spots, engage with their neighbors, and cultivate a sense of belonging. Whether through casual meetups, interest-based events, or larger social gatherings, Indy Social aims to strengthen the fabric of our local community.</p>
-    <h2>Join Our Discord Community</h2>
-    <p>Discord is a voice, video, and text chat app that's used by tens of  millions of people to talk and hang out with their communities and friends. Indy Social maintains a moderated Discord server for  members 18 and older to chat and organize events on. Click the link below to join our server to stay up to date with the latest events being organized.</p>
-    <a href="https://discord.com/invite/indysocial" target="_blank" class="button">
-            Join Our Discord
-    </a>
-    <h2>Our Events</h2>
-    <p>Indy Socials members help bring people together by organizing a wide variety of events throughout the city—and sometimes beyond! Our range of events has included everything from regularly scheduled board game nights and craft meetups,  trivia, book clubs, seasonal events like pumpkin carving. There's always something to look forward to. Whether you're looking to try something new, meet some people to share hobbies with, or just have fun.</p>
+  <header class="site-header">
+    <div class="container header-row">
+      <a class="brand" href="#top" aria-label="Indy Social Home">
+          <img class="brand-mark" src="assets/IndySocialIcon_Colored.svg" alt="Indy Social logo icon" aria-hidden="true" />
+        <span>INDY SOCIAL</span>
+      </a>
 
-    <div class="icons">
-        <img src="./assets/yarn.svg" alt="Yarn Icon" />
-        <img src="./assets/dice.svg" alt="Dice Icon" />
-        <img src="./assets/books.svg" alt="Book Icon" />
-        <img src="./assets/beer.svg" alt="Beer Icon" />
+      <div class="header-actions">
+        <a class="ghost-btn" href="rules.html">Server Rules</a>
+        <a class="discord-btn" href="https://discord.gg/YEjSyDCSVV" target="_blank" rel="noopener noreferrer">
+          Join the Discord
+        </a>
+      </div>
     </div>
+  </header>
 
-        
+  <main id="top">
+    <section class="hero">
+      <div class="container hero-layout">
+        <div class="reveal">
+          <span class="pill">Established 2019</span>
+          <h1>Meet Your People in the Circle City.</h1>
+          <p class="lead">
+            Indy Social is an Indianapolis-based community helping adults meet new people,
+            discover local events, and find others to share memorable experiences with.
+            Indy Social is an 18+ community.
+          </p>
 
-   
+          <div class="hero-actions">
+            <a class="primary-btn" href="https://discord.gg/YEjSyDCSVV" target="_blank" rel="noopener noreferrer">Connect on Discord</a>
+            <a class="ghost-btn" href="#how-it-works">How It Works</a>
+          </div>
+        </div>
+
+        <div class="hero-art reveal" aria-hidden="true">
+          <span class="orb one"></span>
+          <span class="orb two"></span>
+          <span class="orb three"></span>
+
+          <article class="hero-card">
+            <div class="hero-card-header">
+              <span class="mini-circle">
+                <img src="assets/IndySocialIcon_Colored.svg" alt="Indy Social icon" />
+              </span>
+              <div>
+                <h3>What You Will Find</h3>
+                <p>Friendship-first, low-pressure social planning</p>
+              </div>
+            </div>
+            <ul>
+              <li>Local events and activities</li>
+              <li>New people to attend events with</li>
+              <li>Connections built around shared hobbies and interests</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="how-it-works">
+      <div class="container">
+        <div class="section-head reveal">
+          <h2>How Indy Social Works</h2>
+          <p>
+            Our community organizes primarily through <a class="inline-link" href="#discord-about">Discord</a>, making it easy to jump into
+            conversations, discover upcoming plans, and find people who match your vibe. Anyone can create an event they want
+            to share with other members.
+          </p>
+        </div>
+
+        <div class="grid-3">
+          <article class="card reveal">
+            <h3><span class="dot blue"></span>Join the Server</h3>
+            <p>Enter the community hub, introduce yourself, and explore channels by interest.</p>
+          </article>
+          <article class="card reveal">
+            <h3><span class="dot red"></span>Find Your Circle</h3>
+            <p>Connect with others through all kinds of events: movies, board game nights, craft circles, book clubs, hiking and outdoor recreation, local festivals, etc..</p>
+          </article>
+          <article class="card reveal">
+            <h3><span class="dot navy"></span>Show Up Together</h3>
+            <p>Attend meetups and outings with people who are also looking to build new friendships.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="discord-about">
+      <div class="container">
+        <div class="section-head reveal">
+          <h2>What Is Discord?</h2>
+          <p>
+            Discord is a free community chat platform where people can connect in text and voice channels. Learn more at
+            <a class="inline-link" href="https://discord.com/" target="_blank" rel="noopener noreferrer">discord.com</a>.
+            Indy Social uses Discord as its home base to coordinate meetups, share plans, and help members
+            find others for events and experiences. It is available on both desktop and mobile.
+          </p>
+        </div>
+
+        <div class="grid-3">
+          <article class="card reveal">
+            <h3>Easy to Join</h3>
+            <p>Create a free account, join the server, and introduce yourself at your own pace. Indy Social is an 18+ community.</p>
+          </article>
+          <article class="card reveal">
+            <h3>Organized Channels</h3>
+            <p>Conversations stay clear by topic so you can quickly find event plans and people with shared interests.</p>
+          </article>
+          <article class="card reveal">
+            <h3>Community First</h3>
+            <p>This server is for social connection, not for businesses to advertise themselves or events they are hosting.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container reveal">
+        <div class="cta-band">
+          <div>
+            <h2>Ready to Meet New People?</h2>
+            <p>Join Indy Social on Discord and start finding your next shared experience.</p>
+          </div>
+          <a class="discord-btn" href="https://discord.gg/YEjSyDCSVV" target="_blank" rel="noopener noreferrer">
+            Connect to the Server
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container footer-row">
+      <p>Indy Social • Indianapolis, Indiana • Established 2019</p>
+      <div class="footer-links">
+        <a href="rules.html">Server Rules</a>
+        <a href="https://discord.gg/YEjSyDCSVV" target="_blank" rel="noopener noreferrer">Join our Discord</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    const revealItems = document.querySelectorAll(".reveal");
+
+    const observer = new IntersectionObserver(
+      (entries) => {
+        for (const entry of entries) {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("visible");
+            observer.unobserve(entry.target);
+          }
+        }
+      },
+      { threshold: 0.16 }
+    );
+
+    revealItems.forEach((item) => observer.observe(item));
+  </script>
 </body>
 </html>
